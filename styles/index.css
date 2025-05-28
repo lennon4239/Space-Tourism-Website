@@ -1,0 +1,101 @@
+/*This doc is for the index.html page;*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../starter-code/assets/home/background-home-desktop.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0px 0px 60px;
+  
+  
+    
+
+  & .nav__img {
+    width: 48px;
+    height: 48px;
+    margin:24px 0px;
+  }
+
+
+  & .nav__links {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+    z-index:999;
+    background-color:rgba(255, 255, 255, 0.10);
+    backdrop-filter:blur(30px);
+    padding:0 64px 0 159px;
+
+
+    & .nav__links__a {
+      /*border-bottom: 3px solid white;*/
+      padding: 20px 0px 30px 0px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      word-spacing: 5px;
+      color:white;
+    }
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  margin: 180px 140px 0px 140px;
+  justify-content:space-between;
+  padding: 20% 0 10% 0; /* this line is zooming the page, it is showing a scrolbar at the botton */
+
+& .header__div {
+    width:50%;
+    color:#D0D6F9;
+    
+
+    & .header__div__title {
+      margin:24px 0;
+      font-size:144px;
+      /*font-family: "Bellefair", serif;
+      font-weight: 400;
+      font-style:uppercase;*/
+    }
+
+
+    & .header__div__subtitle {
+        /*font-family: "Bellefair", serif;
+        font-weight: 400;
+        font-style:uppercase;*/
+        letter-spacing:2.2px;
+      }
+
+
+    & .header__div__paragraph {
+      font-size:1rem;
+        /*font-family: "Barlow", sans-serif;
+        font-weight: 400;
+        font-style: normal;*/
+        line-height: 2rem;
+  }
+  }
+
+
+  & .header__button {
+    width: 272px;
+    height:272px;
+    justify-items:center;
+    border-radius:100%;
+    color:black;
+    margin: 35px 0 35px 30px;
+  }
+}
